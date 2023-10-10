@@ -1,0 +1,16 @@
+{
+  "name": "karagozsanatevi",
+  "version": "1.0.0",
+  "description": "Karagöz sanat evi, bla bla...",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i assets/css/plugin/input.css -o assets/css/tailwind-output.css --minify",
+    "watch": "tailwindcss -i assets/css/plugin/input.css -o assets/css/tailwind-output.css -w --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

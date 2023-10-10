@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="TR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pronet" />
+    <title>KaraGöz Sanat Evi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="assets/css/tailwind-output.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/8a1befcf8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="bg-black p-4">
+      <div class="mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="logo-container">
+            <a class="logo-link" href="#">
+              <img class="logo" src="./images/logo.png" alt="Sanatevi Logo" />
+              <span class="logo-text">sanatevi</span>
+            </a>
+          </div>
+          <div class="md:flex space-x-4 navbar-desktop">
+            <a href="#" class="text-white">Home</a>
+            <a href="#about-us" class="text-white">About</a>
+            <a href="#team" class="text-white">Musicians</a>
+            <a href="#projects" class="text-white">Art Projects</a>
+            <a href="#" class="text-white">Paydos Holidays</a>
+            <a href="#" class="text-white">News</a>
+            <a href="#contact" class="text-white">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="toggleButton" class="text-white focus:outline-none">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar mobile -->
+    <div
+      id="mobileMenu"
+      class="md:hidden fixed inset-0 bg-black bg-opacity-75 z-50 hidden mobile-menu"
+    >
+      <div class="container mx-auto flex justify-end p-4 x-button">
+        <button id="closeButton" class="text-white">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center z-10">
+        <a href="#" class="text-white mb-5">Home</a>
+        <a href="#about-us" class="text-white mb-5">About</a>
+        <a href="#team" class="text-white mb-5">Musicians</a>
+        <a href="#projects" class="text-white mb-5">Art Projects</a>
+        <a href="#" class="text-white mb-5">Paydos Holidays</a>
+        <a href="#" class="text-white mb-5">News</a>
+        <a href="#contact" class="text-white mb-5">Contact</a>
+      </div>
+    </div>
+    <!-- mobile navbar end-->
+    <!-- slider start -->
+    <div class="slider-container">
+      <div class="slide">
+        <img src="./images/slider-1-2.jpg" alt="image1" />
+      </div>
+      <div class="slide">
+        <img src="./images/slider-1-1.jpg" alt="image2" />
+      </div>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="first-info flex absolute flex-col left-auto">
+        <h1 class="with-line slider-title">Lorem, ipsum.</h1>
+        <p class="slider-text">
+          Karagöz Sanat Evi, is simply dummy text of the printing and
+          typesetting industry. ...
+        </p>
+        <a
+          href="#"
+          class="button-one flex justify-center items-center transition duration-300"
+          >More View</a
+        >
+      </div>
+    </div>
+    <!-- slider end -->
+    <!-- about -->
+    <section id="about-us" class="about-us flex justify-center items-center">
+      <div class="image-v-text flex flex-col md:flex-row container mx-auto">
+        <div class="about-image">
+          <img src="./images/about/about-2-1.jpg" class="w-full" />
+        </div>
+        <div class="info md:w-1/2 p-4 flex flex-col justify-center">
+          <h2 class="about-title-one mb-4 font-bold">History of Karagöz</h2>
+          <h3 class="about-title-two mb-3">
+            The World's Leading Museum of History & Culture.
+          </h3>
+          <p class="about-text-one mb-4 leading-relaxed">
+            Egypt is the world’s leading museum of history & culture, housing a
+            permanent collection of over 2.3 million objects that span over
+            5,000 years of human creativity.
+          </p>
+          <p class="about-text-two mb-4 leading-relaxed">
+            Desires to obtain pain of itself, because it is pain, but because
+            occa- sionally circumstances occur some great pleasure.
+          </p>
+          <a
+            href=""
+            class="button font-bold py-2 px-4 rounded transition duration-300 ease-in-out flex justify-center items-center"
+            >More View</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- about-end -->
+    <!-- music-gallery cards -->
+    <section class="music-gallery">
+      <h2 class="music-gallery-title">Music & Gallery</h2>
+      <main>
+        <div class="card">
+          <img src="./images/cards/collections-3-1.jpg" alt="" />
+          <div class="card-content">
+            <h2>Exhibition</h2>
+            <p>The Exhibits Cover All Time of The Egyptian Civilization.</p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cards/collections-3-2.jpg" alt="" />
+          <div class="card-content">
+            <h2>Exhibition</h2>
+            <p>Hadrian and Athens. Conversing with an Ideal World</p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/cards/collections-3-3.jpg" alt="" />
+          <div class="card-content">
+            <h2>Exhibition</h2>
+            <p>Classicita ed Europa. The common destiny of Greece and Italy.</p>
+            <a href="#" class="button">
+              Find out more
+              <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- music-gallery cards end -->
+    <!-- Art projects -->
+    <section id="projects" class="projects">
+      <div class="flex-container">
+        <div class="projects-info">
+          <div class="block-title text-center">
+            <h2 class="block-title__title">Art Projects</h2>
+          </div>
+          <p class="projects-info-text text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            velit laudantium vitae qui magnam odit deserunt impedit iure harum,
+            ratione commodi a omnis delectus! Dolorum consequatur, consectetur
+            repellat, quo, voluptates consequuntur rerum recusandae quod sed
+            earum aspernatur corporis ipsa fuga ad. Fugit rem eum consectetur.
+          </p>
+          <button class="card-button">More Arts</button>
+        </div>
+        <div class="grid-container">
+          <div class="card">
+            <img
+              class="grid-item grid-item-1"
+              src="./images/projects/collections-2-1.jpg"
+              alt=""
+            />
+            <a href="#">St. Catherine<br />Alexandria in Prison</a>
+          </div>
+          <div class="card">
+            <img
+              class="grid-item grid-item-2"
+              src="./images/projects/collections-2-5.jpg"
+              alt=""
+            />
+            <a href="#">Mare and Foal</a>
+          </div>
+          <div class="card">
+            <img
+              class="grid-item grid-item-3"
+              src="./images/projects/collections-2-2.jpg"
+              alt=""
+            />
+            <a href="#">Alexandria in Prison</a>
+          </div>
+          <div class="card">
+            <img
+              class="grid-item grid-item-4"
+              src="./images/projects/collections-2-6.jpg"
+              alt=""
+            />
+            <a href="#">Tower of Babel (Babylon)</a>
+          </div>
+          <div class="card">
+            <img
+              class="grid-item grid-item-5"
+              src="./images/projects/collections-2-3.jpg"
+              alt=""
+            />
+            <a href="#">The Lascaux Cave</a>
+          </div>
+          <div class="card">
+            <img
+              class="grid-item grid-item-6"
+              src="./images/projects/collections-2-4.jpg"
+              alt=""
+            />
+            <a href="#">Mercenary Soldiers<br />In Ottoman</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Art projects end -->
+    <!-- musicians cards -->
+    <section id="team" class="team-two mb-lg-5">
+      <div class="container">
+        <div class="block-title text-center">
+          <h2 class="block-title__title">Musicians</h2>
+          <!-- /.block-title__title -->
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-1.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Ali Osman</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Etnik müzik...</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-2.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Elizabet Chaille</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Event Coordinator</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-3.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Delana Esterbrook</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Jounalist</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-4.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Jae Anzideo</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Event Coordinator</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-5.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Tammara Salina</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Jounalist</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-6.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Elinore Bobbit</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Music Curator</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-7.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Ileen Eaves</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Jounalist</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-8.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Elnora Normington</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Music Curator</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-two__single">
+              <div class="team-two__image">
+                <div class="testimonials-two__image-inner">
+                  <img
+                    src="https://st.ourhtmldemo.com/new/egypt/images/team/team-2-9.jpg"
+                    alt="Awesome Image"
+                  />
+                </div>
+                <!-- /.testimonials-two__image-inner -->
+              </div>
+              <!-- /.team-two__image -->
+              <div class="team-two__content">
+                <h3 class="team-two__name">Harriette Gentsy</h3>
+                <!-- /.team-two__name -->
+                <p class="team-two__designation">Event Coordinator</p>
+                <!-- /.team-two__designation -->
+              </div>
+              <!-- /.team-two__content -->
+            </div>
+            <!-- /.team-two__single -->
+          </div>
+          <!-- /.col-lg-4 col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- musicians cards end-->
+    <!-- blog -->
+    <div class="blogs">
+      <div class="block-title text-center">
+        <h2 class="block-title__title">Concerts</h2>
+      </div>
+      <div class="blogs-items">
+        <div class="container">
+          <img src="./images/blog/blog-2-1.jpg" alt="" />
+          <div class="blog-info">
+            <a href="#" class="blog-info-title"
+              ><h3>Celebrating Authentic..</h3></a
+            >
+            <p class="blog-info-text">
+              Explain to you how all this mistaken idea of denouncing
+              pleasure...
+            </p>
+            <div class="date-button flex justify-between">
+              <a href="#" class="button">More +</a>
+              <a href="#" class="date">08.04.2022</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-group">
+          <div class="container item-1">
+            <p>
+              “While I stand & regard it, the indifference to myself shown by a
+              work of art in itself is art”
+            </p>
+          </div>
+          <div class="container item-2">
+            <img src="./images/blog/blog-2-2.jpg" alt="" />
+            <div class="blog-info">
+              <a href="#" class="blog-info-title"
+                ><h3>Celebrating Authentic..</h3></a
+              >
+              <p class="blog-info-text">
+                Oktay Temiz ile birezilyada çoşkulu bir müzik etkinliği
+                yaşandı..
+              </p>
+              <div class="date-button flex justify-between">
+                <a href="#" class="button">More +</a>
+                <a href="#" class="date">24.10.2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./images/blog/blog-2-3.jpg" alt="" />
+          <div class="blog-info">
+            <a href="#" class="blog-info-title"
+              ><h3>Celebrating Authentic..</h3></a
+            >
+            <p class="blog-info-text">
+              Oktay Temiz ile birezilyada çoşkulu bir müzik etkinliği yaşandı..
+            </p>
+            <div class="date-button flex justify-between">
+              <a href="#" class="button">More +</a>
+              <a href="#" class="date">19.02.2021</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blog end -->
+    <div id="contact" class="footer">
+      <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-5 pb-5">
+          <!-- Section: Social media -->
+          <div class="logo-footer">
+            <a href=""><img src="./images/logo.png" alt="" /></a>
+          </div>
+          <section class="mb-4 icons">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3 copyright"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-white" href="#">karagozsanatevi.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- -------------------JAVASCRIPT---------------------- -->
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

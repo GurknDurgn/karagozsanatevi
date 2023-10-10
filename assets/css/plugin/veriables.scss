@@ -1,0 +1,32 @@
+// color setting
+$black: #000;
+$white: #fff;
+$batbloodsoup: #eb3568;
+$darkrift: #040d12;
+$parmesan: #ffffdd;
+$creamyclouddreams: #fff5e0;
+$withthegrain: #bca37f;
+$darkdenimblue: #053b50;
+$supersilver: #eeeeee;
+$color-primary-white: rgb(4, 13, 18);
+// mobile first
+@mixin media($point) {
+  @if $point == tablet {
+    @media (min-width: 400px) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+/* @include media(tablet) {
+    
+   }
+   @include media(desktop) {
+    
+   }
+*/

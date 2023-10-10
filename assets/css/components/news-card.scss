@@ -1,0 +1,37 @@
+// news widget
+.news-widget {
+  .news-card {
+    border: 1px solid;
+    background-color: #e2e2e2;
+    a {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      span {
+        opacity: 1;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 4px;
+        transition: all 0.5s;
+        display: block;
+      }
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+    .text {
+      padding: 10px 20px 0;
+      .cat {
+      }
+      h3 {
+        margin: 10px 0;
+      }
+      p {
+      }
+    }
+  }
+}

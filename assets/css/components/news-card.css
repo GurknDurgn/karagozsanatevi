@@ -1,0 +1,28 @@
+.news-widget .news-card {
+  border: 1px solid;
+  background-color: #e2e2e2;
+}
+.news-widget .news-card a {
+  position: relative;
+}
+.news-widget .news-card a img {
+  width: 100%;
+}
+.news-widget .news-card a span {
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 4px;
+  transition: all 0.5s;
+  display: block;
+}
+.news-widget .news-card a:hover span {
+  opacity: 1;
+}
+.news-widget .news-card .text {
+  padding: 10px 20px 0;
+}
+.news-widget .news-card .text h3 {
+  margin: 10px 0;
+}/*# sourceMappingURL=news-card.css.map */
